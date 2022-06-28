@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="274.0" layoutY="38.0" prefHeight="35.0" prefWidth="200.0" text="Calculate Sum" textAlignment="CENTER">
+         <font>
+            <Font name="Futura Md BT Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumber2" layoutX="274.0" layoutY="130.0" prefHeight="37.0" prefWidth="200.0" promptText="Second number" />
+      <TextField fx:id="txtNumber1" layoutX="274.0" layoutY="82.0" prefHeight="35.0" prefWidth="200.0" promptText="First number" />
+      <Button fx:id="btSum" layoutX="330.0" layoutY="184.0" mnemonicParsing="false" onAction="#onBtSumAction" prefHeight="25.0" prefWidth="88.0" text="Sum" />
+      <Label layoutX="302.0" layoutY="228.0" prefHeight="35.0" prefWidth="69.0" text="Result = ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelResult" alignment="CENTER" layoutX="377.0" layoutY="228.0" prefHeight="35.0" prefWidth="69.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxPerson" layoutX="27.0" layoutY="43.0" onAction="#onComboBoxPersonAction" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btAll" layoutX="105.0" layoutY="184.0" mnemonicParsing="false" onAction="#onBtAll" prefHeight="25.0" prefWidth="50.0" text="All" />
+      <Label layoutX="27.0" layoutY="87.0" prefHeight="35.0" prefWidth="88.0" text="Select 1 =">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="121.0" prefHeight="35.0" prefWidth="88.0" text="Select 2 =">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSelect1" layoutX="111.0" layoutY="87.0" prefHeight="35.0" prefWidth="124.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSelect2" layoutX="111.0" layoutY="121.0" prefHeight="35.0" prefWidth="124.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSelectAll" alignment="CENTER" layoutX="68.0" layoutY="225.0" prefHeight="61.0" prefWidth="124.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btSave" layoutX="183.0" layoutY="43.0" mnemonicParsing="false" onAction="#onBtSave" text="Save" />
+   </children>
+</AnchorPane>
